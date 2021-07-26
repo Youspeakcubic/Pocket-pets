@@ -1,0 +1,141 @@
+/*grid settings and main containers */
+html{
+  background-color: pink;
+  border: #EF6F6C 10px solid
+}
+h1{
+  font-family: 'Zen Loop', cursive;
+}
+hr{
+  color:#EF6F6C;
+}
+.itemMain{
+   grid-area: main;
+   border: #EF6F6C 2px solid;
+   background-color: #632E2D;
+}
+.itemSide{
+   grid-area: side;
+   border: #EF6F6C 2px solid
+
+ }
+.itemShop{
+  grid-area:shop;
+  border: #EF6F6C 2px solid
+}
+
+.gridCont{
+  display:grid;
+  height:95vh;
+  width:97vw;
+  grid-template-areas:
+  'side main main main main main main main'
+  'side main main main main main main main'
+  'shop shop shop shop shop shop shop shop';
+  grid-gap: 5px;
+}
+.dogSprite{
+  height:10vh;
+  position: relative;
+  animation-name: dogMovement;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+.gap{
+  padding-top: 10vh;
+}
+/*end grid settings and main containers */
+/* dog animation */
+@keyframes dogMovement {
+  0% {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    left:0%;
+    top:0%;
+  }
+  25% {
+    left:90%;
+    top: 10%;
+  }
+  50% {
+    left:80%;
+    top:82%;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  75%{
+    left:20%;
+    top:80%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  90%{
+    left:55%;
+    top:40%;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  100%{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    left:0%;
+    top:0%;
+    }
+}
+/* end dog animation */
+/* progress bar style */
+.circular{
+  height:100px;
+  width: 100px;
+  position:relative;
+}
+.circular .inner{
+  position: absolute;
+  z-index: 6;
+  top:50%;
+  left:50%;
+  height:80px;
+  width:80px;
+  margin: -40px 0 0 -40px;
+  background:#632E2D;
+  border-radius: 100%;
+}
+.circular .number{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  z-index: 10;
+  font-size:18px;
+  font-weight: 500;
+  color:pink;
+}
+.circular .bar{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 100px, 100px, 50px);
+}
+.circle .bar .progress {
+  position: absolute;
+  height:100%;
+  width:100%;
+  -webkit-border-radius:100%;
+  clip: rect(0px, 50px, 100px,0px);
+  background:pink;
+}
+.circle .left .progress {
+  z-index: 1;
+  animation: left 4s linear both;
+}
+@keyframes left {
+  100%{
+    transform: rotate(180deg);
+  }
+}
+.circle .right {
+  transform: rotate(180deg);
+}
+/* end progress bar */
