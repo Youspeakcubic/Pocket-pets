@@ -108,13 +108,13 @@ hr{
   z-index: 10;
   font-size:18px;
   font-weight: 500;
-  color:pink;
+  color:white;
 }
 .circular .bar{
   position: absolute;
   height: 100%;
   width: 100%;
-  background: #fff;
+  background: pink;
   -webkit-border-radius: 100%;
   clip: rect(0px, 100px, 100px, 50px);
 }
@@ -124,18 +124,69 @@ hr{
   width:100%;
   -webkit-border-radius:100%;
   clip: rect(0px, 50px, 100px,0px);
-  background:pink;
+  background:white;
 }
 .circle .left .progress {
   z-index: 1;
-  animation: left 4s linear both;
 }
-@keyframes left {
+.circle .right {
+  transform: rotate(180deg);
+  z-index:3;
+
+}
+.circle .right .progress{
+  animation-delay:4s;
+}
+.progressA{
+  animation: leftA 4s linear both;
+}
+.progressB{
+  animation: leftB 4s linear both;
+}
+.progressC{
+  animation: leftC 4s linear both;
+}
+.progressD{
+  animation: leftD 4s linear both;
+}
+@keyframes leftA {
   100%{
     transform: rotate(180deg);
   }
 }
-.circle .right {
-  transform: rotate(180deg);
+@keyframes leftB {
+  100%{
+    transform: rotate(180deg);
+  }
+}
+@keyframes leftC {
+  100%{
+    transform: rotate(180deg);
+  }
+}
+@keyframes leftD {
+  100%{
+    transform: rotate(180deg);
+  }
+}
+@keyframes rightA {
+  100%{
+    transform: rotate(180deg);
+  }
+}
+@keyframes rightB {
+  100%{
+    transform: rotate(180deg);
+  }
+}
+@keyframes rightC {
+  100%{
+    transform: rotate(180deg);
+  }
+}
+@keyframes rightD {
+  100%{
+    transform: rotate(180deg);
+  }
 }
 /* end progress bar */
