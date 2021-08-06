@@ -4,59 +4,42 @@
     <link rel="stylesheet" href="style.css"></link>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <title>Pocket pets by Anthony De la Torre</title>
   </head>
   <body>
+    <div id="coinCount"><img src="dogIcon.png" alt= "dogIcon" />100</div>
     <div class="gridCont">
       <div class="itemSide">
-        <h1> hunger:</h1>
-        <div class="circular">
-          <div class="inner"></div>
-          <div class="number">100%</div>
-          <div class="circle">
-            <div class="bar left">
-              <div class="progress"></div>
-            </div>
-            <div class="bar right">
-              <div class="progress"></div>
-            </div>
+        <h1>Hunger:</h1>
+        <div id="progress">
+            <div id="progressBarHung"></div>
         </div>
-        </div>
-        <hr />
         <h1>Thirst:</h1>
-        <div class="circular">
-          <div class="inner"></div>
-          <div class="number">100%</div>
-          <div class="circle">
-            <div class="bar left">
-              <div class="progress"></div>
-            </div>
-            <div class="bar right">
-              <div class="progress"></div>
-            </div>
-          </div>
+        <div id="progress">
+            <div id="progressBarThir"></div>
         </div>
-      <hr />
-      <h1>Happiness:</h1>
-      <div class="circular">
-        <div class="inner"></div>
-        <div class="number">100%</div>
-        <div class="circle">
-          <div class="bar left">
-          <div class="progress"></div>
-          </div>
-          <div class="bar right">
-            <div class="progress"></div>
-          </div>
+        <h1>happiness:</h1>
+        <div id="progress">
+            <div id="progressBarHapp"></div>
         </div>
-      </div>
     </div>
       <div class="itemMain">
         <img src="dogsprite.gif" alt="dogThing" class="dogSprite"/>
       </div>
-      <div class="itemShop"></div>
+      <div class="itemShop">
+        <div>
+          
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+      </div>
     </div>
     <script src="innerworkings.js"></script>
   </body>
