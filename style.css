@@ -6,6 +6,18 @@ html{
 h1{
   font-family: 'Zen Loop', cursive;
 }
+h2{
+  font-family: 'Zen Loop', cursive;
+}
+button{
+  font-family: 'Zen Loop', cursive;
+  font-size: 3vh;
+  padding: 1vh;
+  border-radius: 2vh;
+}
+button:hover{
+  background-color: #EF6F6C;
+}
 hr{
   color:#EF6F6C;
 }
@@ -34,6 +46,8 @@ hr{
 
  }
 .itemShop{
+  display: flex;
+  justify-content: center;
   grid-area:shop;
   border: #EF6F6C 2px solid
 }
@@ -122,3 +136,15 @@ height:100%;
   height:100%;
 }
 /* end progress bar */
+/* shop styling */
+.shopItem{
+  text-align: center;
+  margin-top: 5vh;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+.shopImg{
+  width: 10vh;
+  height:10vh;
+  border: #EF6F6C 2px solid
+}

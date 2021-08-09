@@ -11,7 +11,6 @@ if(hunger <= 0 || thirst <= 0) {
   alert("Your pet is dying, please take care of them ;(")
 }
 else{
-  console.log("gay");
   thirst -= .5
   hunger -= 1.5
   happiness = (thirst + hunger)/2
@@ -21,3 +20,9 @@ else{
   happinessProgress.style.width = happiness + "%";
 }};
 setInterval(time, 10000);
+
+let replenish = (attribute) => {
+  console.log(attribute)
+  attribute += 30;
+  console.log(attribute);
+}
