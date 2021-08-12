@@ -70,6 +70,22 @@ hr{
   animation-duration: 20s;
   animation-iteration-count: infinite;
 }
+#dogPoop{
+  position:absolute;
+  height:5vh;
+  display:none;
+}
+#dogPee{
+  position: absolute;
+  height:5vh;
+  display:none;
+}
+#dogFood{
+  height: 5vh;
+}
+#dogWater{
+  height:5vh;
+}
 .gap{
   padding-top: 10vh;
 }
