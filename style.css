@@ -66,9 +66,15 @@ hr{
 .dogSprite{
   height:10vh;
   position: relative;
+}
+.dogSpriteAnimMain{
   animation-name: dogMovement;
   animation-duration: 20s;
   animation-iteration-count: infinite;
+}
+.dogSpriteAnimFeed{
+  animation-name: dogFeed;
+  animation-duration: 20s;
 }
 #dogPoop{
   position:absolute;
@@ -81,9 +87,11 @@ hr{
   display:none;
 }
 #dogFood{
+  position: fixed;
   height: 5vh;
 }
 #dogWater{
+  position: static;
   height:5vh;
 }
 .gap{
@@ -100,7 +108,7 @@ hr{
     top:0%;
   }
   25% {
-    left:90%;
+    left:85%;
     top: 25%;
   }
   50% {
@@ -127,6 +135,13 @@ hr{
     left:0%;
     top:0%;
     }
+}
+@keyframes dogFeed {
+  100%{
+    -webkit-transform: scaleX(1);
+    left:0%;
+    top:1%;
+  }
 }
 /* end dog animation */
 /* progress bar style */
