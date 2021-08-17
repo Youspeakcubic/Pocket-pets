@@ -89,7 +89,7 @@ let replenish = (type) => {
     if (coins < 20) {
 
     }
-    else if (coins > 20) {
+    else if (coins >= 20) {
       console.log("succ1");
       foodBowl.src="dopFood.jpg";
       dog.className = 'dogSprite dogSpriteAnimFeed'
@@ -109,7 +109,7 @@ let replenish = (type) => {
     if (coins < 10) {
 
     }
-    else if (coins > 10) {
+    else if (coins >= 10) {
       waterBowl.src="dogWater.jpg";
       dog.className = 'dogSprite dogSpriteAnimFeed'
       coins -= 10;
