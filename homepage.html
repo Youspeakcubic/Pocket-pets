@@ -34,7 +34,10 @@
         <img src="dogpee.png" alt="pee" id="dogPee" onClick="poopPickup(2)"/>
         <img src="emptybowl.jpg" alt ="food" id="dogFood" />
         <img src="emptybowl.jpg" alt="water" id="dogWater" />
+        <img src="dogRug.png" alt="rug" id ="dogRug" />
+        <img src ="dogHouse.png" alt = "house" id ="dogHouse" />
         <img src="dogsprite.gif" alt="dogThing" class="dogSprite dogSpriteAnimMain" id="dog"/>
+        <img src="dogsprite.gif" alt="dogThing2" class="dogSprite2 dogSpriteAnimMain2" id="dog2"/>
       </div>
       <div class="itemShop">
         <div class="shopItem">
@@ -53,9 +56,19 @@
           <button onClick="replenish(3)">BUY</button>
         </div>
         <div class="shopItem">
+          <img src="dogRug.png" alt="rug" class="shopImg" />
+          <h2>Rug:50 coins</h2>
+          <button onClick="addRug()">BUY</button>
+        </div>
+        <div class="shopItem">
           <img src="dogstill.gif" alt="puppy" class="shopImg" />
           <h2>Puppy:250 coins</h2>
           <button onClick="addPuppy()">BUY</button>
+        </div>
+        <div class="shopItem">
+          <img src="dogHouse.png" alt="house" class="shopImg" />
+          <h2>Dog House: 500 coins</h2>
+          <button onClick="addHouse()">BUY</button>
         </div>
       </div>
     </div>

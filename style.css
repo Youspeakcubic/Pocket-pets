@@ -67,13 +67,32 @@ hr{
   height:10vh;
   position: relative;
 }
+.dogSprite2{
+  height:6.5vh;
+  position: relative;
+  display:none;
+}
 .dogSpriteAnimMain{
   animation-name: dogMovement;
   animation-duration: 20s;
   animation-iteration-count: infinite;
 }
+.dogSpriteAnimMain2 {
+  animation-name: dogMovement2;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+.dogSpriteAnimMain3{
+  animation-name: dogMovement3;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
 .dogSpriteAnimFeed{
   animation-name: dogFeed;
+  animation-duration: 20s;
+}
+.dogSpriteAnimSleep{
+  animation-name: dogSleep;
   animation-duration: 20s;
 }
 #dogPoop{
@@ -87,12 +106,27 @@ hr{
   display:none;
 }
 #dogFood{
-  position: fixed;
+  position: absolute;
   height: 5vh;
 }
 #dogWater{
   position: static;
   height:5vh;
+}
+#dogRug{
+  position: absolute;
+  left:40vw;
+  top:25vh;
+  height:15vh;
+  display:none;
+  z-index: 0;
+}
+#dogHouse {
+  position :absolute;
+  left:80vw;
+  top:45vh;
+  height: 15vh;
+  display: none;
 }
 .gap{
   padding-top: 10vh;
@@ -113,13 +147,13 @@ hr{
   }
   50% {
     left:80%;
-    top:82%;
+    top:70%;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
   75%{
     left:20%;
-    top:80%;
+    top:70%;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
   }
@@ -136,12 +170,91 @@ hr{
     top:0%;
     }
 }
+@keyframes dogMovement2 {
+  0% {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    left:0%;
+    top:0%;
+  }
+  25% {
+    left:45%;
+    top: 70%;
+  }
+  50% {
+    left:20%;
+    top:70%;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  75%{
+    left:80%;
+    top:70%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  90%{
+    left:55%;
+    top:40%;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  100%{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    left:0%;
+    top:0%;
+    }
+}
+@keyframes dogMovement3 {
+  0% {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    left:0%;
+    top:0%;
+  }
+  25% {
+    left:20%;
+    top: 50%;
+  }
+  50% {
+    left:50%;
+    top:20%;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  75%{
+    left:32%;
+    top:70%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  90%{
+    left:80%;
+    top:15%;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  100%{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    left:0%;
+    top:0%;
+    }
+}
 @keyframes dogFeed {
   100%{
     -webkit-transform: scaleX(1);
     left:0%;
     top:1%;
   }
+}
+@keyframes dogSleep {
+    100%{
+      left:40vw;
+      top:25vh;
+    }
+
 }
 /* end dog animation */
 /* progress bar style */
@@ -172,11 +285,11 @@ height:100%;
 .shopItem{
   text-align: center;
   margin-top: 5vh;
-  margin-left: 8vw;
-  margin-right: 8vw;
+  margin-left: 4vw;
+  margin-right: 4vw;
 }
 .shopImg{
-  width: 10vh;
-  height:10vh;
+  width: 8vh;
+  height:8vh;
   border: #EF6F6C 2px solid
 }
