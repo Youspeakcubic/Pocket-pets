@@ -21,21 +21,6 @@ button:hover{
 hr{
   color:#EF6F6C;
 }
-#coinCount{
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  right:0;
-  top:0;
-  margin:4vh;
-  padding:1vh;
-  background-color:#EF6F6C;
-  border: #D1ABAD 2px solid;
-}
-#coinCount img{
-  height:8vh;
-  width: 5vw;
-}
 .itemMain{
    grid-area: main;
    border: #EF6F6C 2px solid;
@@ -63,38 +48,24 @@ hr{
   'shop shop shop shop shop shop shop shop';
   grid-gap: 5px;
 }
-.dogSprite{
-  height:10vh;
-  position: relative;
+/* End grid and main styling*/
+/*Coin cointainer*/
+#coinCount{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right:0;
+  top:0;
+  margin:4vh;
+  padding:1vh;
+  background-color:#EF6F6C;
+  border: #D1ABAD 2px solid;
 }
-.dogSprite2{
-  height:6.5vh;
-  position: relative;
-  display:none;
+#coinCount img{
+  height:8vh;
+  width: 5vw;
 }
-.dogSpriteAnimMain{
-  animation-name: dogMovement;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-}
-.dogSpriteAnimMain2 {
-  animation-name: dogMovement2;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-}
-.dogSpriteAnimMain3{
-  animation-name: dogMovement3;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-}
-.dogSpriteAnimFeed{
-  animation-name: dogFeed;
-  animation-duration: 20s;
-}
-.dogSpriteAnimSleep{
-  animation-name: dogSleep;
-  animation-duration: 20s;
-}
+/* end cointainer */
 #dogPoop{
   position:absolute;
   height:5vh;
@@ -128,12 +99,41 @@ hr{
   height: 15vh;
   display: none;
 }
-.gap{
-  padding-top: 10vh;
-}
-
 /*end grid settings and main containers */
 /* dog animation */
+
+.dogSprite{
+  height:10vh;
+  position: relative;
+}
+.dogSprite2{
+  height:6.5vh;
+  position: relative;
+  display:none;
+}
+.dogSpriteAnimMain{
+  animation-name: dogMovement;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+.dogSpriteAnimMain2 {
+  animation-name: dogMovement2;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+.dogSpriteAnimMain3{
+  animation-name: dogMovement3;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+.dogSpriteAnimFeed{
+  animation-name: dogFeed;
+  animation-duration: 20s;
+}
+.dogSpriteAnimSleep{
+  animation-name: dogSleep;
+  animation-duration: 20s;
+}
 @keyframes dogMovement {
   0% {
     -webkit-transform: scaleX(-1);
